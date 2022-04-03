@@ -1,0 +1,31 @@
+#indexFooter{
+    width: 80%;
+    color: grey;
+    text-align: left;
+    margin: auto;
+    padding-bottom: 50px;
+}
+#indexFooter>div:first-child{  
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#indexFooter>div:first-child>div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+#indexFooter a{
+  text-decoration: none;
+  color: grey;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+#indexFooter a:hover{
+  text-decoration: underline;
+}
+
+.copyrightLine{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,19 @@
+#footer{
+    width: 80%;
+    margin: 50px auto 70px auto;
+}
+#footer>div:first-child{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+#footer a{
+    text-decoration: none;
+    color: grey
+}
+#footer p{
+    color: grey
+}
+#footer a:hover{
+    text-decoration: underline;
+}
