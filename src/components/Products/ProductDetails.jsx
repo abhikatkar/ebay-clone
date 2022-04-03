@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 import axios from "axios";
 import "./product.css";
 import { Footer } from "../common/Footer";
+import { Navbar } from "../common/Navbar";
 
 function ProductDetails() {
   const [oneProduct, setoneProduct] = useState({});
@@ -19,6 +20,7 @@ function ProductDetails() {
   console.log(oneProduct);
   return (
     <>
+    <Navbar/>
       <div id="singleProductDetail">
       <div className="sideMenu">
           <h3>Shop by Category</h3>

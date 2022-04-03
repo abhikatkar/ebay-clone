@@ -1,8 +1,11 @@
 import { Footer } from "../common/Footer";
 import "./ElectronicsPage.css";
 import { Link } from "react-router-dom";
+import { Navbar } from '../common/Navbar';
 export const Electronics = () => {
   return (
+    <>
+    <Navbar/>
     <div>
       <section id="ElectronicsMain">
         <div className="sideMenu">
@@ -123,5 +126,6 @@ export const Electronics = () => {
       </section>
       <Footer />
     </div>
+    </>
   );
 };
