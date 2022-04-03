@@ -92,11 +92,11 @@
     color: grey;
   }
   .addtocart {
-    width: 50%;
-    height: 30px;
+    background-color: rgb(14, 113, 171);
     color: white;
-    background-color: blue;
     border: none;
+    padding: 20px;
+    border-radius: 20px;
   }
   
   @media only Screen and (min-width: 368px) and (max-width: 768px) {
