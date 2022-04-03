@@ -46,3 +46,10 @@ button {
   width: 80%;
   margin: auto;
 }
+
+button:hover{
+  opacity: 0.8;
+}
+input:last-child:hover{
+  opacity: 0.8;
+}

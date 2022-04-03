@@ -4,6 +4,7 @@ import axios from "axios";
 import "./product.css";
 import { Footer } from "../common/Footer";
 import { Navbar } from "../common/Navbar";
+import { Link } from "react-router-dom";
 
 function ProductDetails() {
   const [oneProduct, setoneProduct] = useState({});
@@ -50,7 +51,8 @@ function ProductDetails() {
             </p>
             <h3>Price: ${oneProduct.price}</h3>
             <h5>Shipping Price: ${oneProduct.shipping_price}</h5>
-            <button className="addtocart">Add to cart</button>
+            <Link to="/cart"><button className="addtocart">Add to cart</button></Link>
+            
           </div>
         </div>
       </div>

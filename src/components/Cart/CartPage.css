@@ -1,0 +1,96 @@
+#cartHead{
+    text-align: left;
+}
+#cartMain{
+    width: 80%;
+    margin: auto;
+    height: 300px;
+    margin-bottom: 50px;
+}
+#cartMainDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#cartProductsMain{
+    border: 1px solid rgb(151, 151, 151);
+    border-radius: 20px;
+    height: 150px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+#cartCheckout{
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+#cartProductsMain>div{
+height: 100%;
+width: 20%;
+}
+#cartMainDiv {
+ font-weight: 500;
+}
+#cartMainDiv select{
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+
+#cartProductsMain>img{
+  border-radius: 20px;
+}
+
+#cartCheckout button{
+    background-color: rgb(14, 113, 171);
+    color: white;
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* Payment Section  */
+
+#paymentForm{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    margin-bottom: 50px;
+    height: 500px;
+}
+
+#paymentForm input{
+    width: 100%;
+    height: 25px;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+#paymentForm input:last-child{
+    background-color: rgb(14, 113, 171);
+    color: white;
+    border: none;
+    padding: auto;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+#cartProductsMain1{
+    border-radius: 20px;
+    height: 300px;
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+#cartCheckout1{
+    width: 25%;
+    border: 1px solid grey;
+    border-radius: 20px;
+    height: 200px;
+}
