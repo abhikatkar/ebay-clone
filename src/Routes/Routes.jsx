@@ -5,6 +5,7 @@ import { Electronics } from '../components/Electronics/ElectronicsPage';
 import ProductDetails from '../components/Products/ProductDetails';
 import ProductPage from '../components/Products/ProductPage';
 import Login from '../components/Login/Login';
+import { CartPage } from '../components/CartPage/CartPage';
 
  
 
@@ -17,6 +18,7 @@ export const AllRoutes = ()=>{
         <Route path="/cell-phones-accessories" element={<Electronics/>}/>
         <Route path="/products" element={<ProductPage/>}/>
         <Route path="/product/:_id" element={<ProductDetails/>}/> 
+        <Route path="/cartpage" element={<CartPage/>}/> 
       </Routes>
     </div>
 }
