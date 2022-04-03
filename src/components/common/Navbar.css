@@ -144,3 +144,14 @@ justify-content: space-between;
         color: grey;
     
     }
+    .logout-btn{
+        margin-right: 2%;
+    width: 50%;
+    height: 30px;
+    padding: auto;
+    border: 1px solid transparent;
+    background-color: rgb(49, 122, 199);
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    }

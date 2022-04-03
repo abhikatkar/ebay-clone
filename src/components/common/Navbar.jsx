@@ -1,7 +1,27 @@
+import { useContext } from "react";
 import { Link } from "react-router-dom";
+import { User } from "../../App";
 import "./Navbar.css";
+import {
+  getAuth,
+  
+  signOut,
+
+  
+} from 'firebase/auth';
+
 
 export const Navbar = () => {
+  const a = useContext(User)
+  const auth = getAuth();
+
+  const signout =()=>{
+    auth.signOut()
+    alert("signout")
+     a.Update(null)
+    
+  }
+ 
   return (
     <section id="Navbar">
       {/* Top Bar of the Navbar */}
@@ -10,13 +30,13 @@ export const Navbar = () => {
           <div>
             Hi!{" "}
             <span>
-              <a href="#"> Sign in</a>
-            </span>{" "}
-            or{" "}
-            <span>
-              {" "}
-              <a href="#">register</a>{" "}
+              
+            <Link to={"/Login"}>{a.user?a.user:"Signin"}</Link>
             </span>
+
+            
+           
+            
           </div>
           <div>Daily Deals</div>
           <div>Help & Contact</div>
@@ -25,8 +45,13 @@ export const Navbar = () => {
           <div>Sell</div>
           <div>WatchList ▼</div>
           <div>My eBay ▼</div>
-          <div><span class="material-icons-outlined">notifications</span></div>
+          <div><span className="material-icons-outlined">notifications</span></div>
           <div><span className="material-icons-outlined">shopping_cart</span></div>
+          
+          
+          { a.user ?<button className="logout-btn"
+          onClick={signout}
+          >SignOut</button>:""}
         </div>
       </div>
       <hr />
@@ -148,6 +173,7 @@ export const Navbar = () => {
             />
           </div>
         </div>
+       
       </div>
     </section>
   );

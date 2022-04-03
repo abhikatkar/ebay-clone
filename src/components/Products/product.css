@@ -40,7 +40,7 @@
     width: 26%;
     border: 2px solid black;
   }
-  .button_distance {
+  .button_distance{
     margin-right: 2%;
     width: 20%;
     height: 60px;
@@ -50,6 +50,8 @@
     color: white;
     border-radius: 20px;
   }
+
+
   .button_distance:hover {
     opacity: 0.7;
     color: black;
