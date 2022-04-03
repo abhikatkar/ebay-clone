@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./product.css";
+import { Footer } from "../common/Footer";
 function ProductPage() {
   //  defining a state
   const [products, setProducts] = useState([]);
@@ -54,6 +55,7 @@ function ProductPage() {
   };
 
   return (
+    <>
     <div>
       <h1>Featured Products</h1>
       <div className="sortingDiv">
@@ -126,7 +128,10 @@ function ProductPage() {
           </div>
         ))}
       </div>
+      
     </div>
+    <Footer/>
+    </>
   );
 }
 export default ProductPage;

@@ -5,7 +5,7 @@ export const Electronics = () => {
   return (
     <div>
       <section id="ElectronicsMain">
-        <div id="sideMenu">
+        <div className="sideMenu">
           <h3>Shop by Category</h3>
           <a href="#">Cell Phones & Smartphone Parts</a>
           <a href="#">Cell Phones and Accessories</a>
@@ -18,7 +18,7 @@ export const Electronics = () => {
         </div>
         <div id="phoneAccessories">
           <div>
-            <Link to={""}>
+            <Link to={"/products"}>
               <img
                 src="https://i.ebayimg.com/thumbs/images/g/31EAAOSw-BJfsl4m/s-l225.webp"
                 alt=""

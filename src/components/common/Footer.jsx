@@ -4,7 +4,7 @@ import "./Footer.css"
 export const Footer = () => {
   return (
     <>
-    <hr />
+    <hr id="footerRule"/>
     <section id="footer">
       
       <div>

@@ -1,6 +1,6 @@
 #footer{
     width: 80%;
-    margin: 50px auto 70px auto;
+    margin: 150px auto 70px auto;
 }
 #footer>div:first-child{
     width: 80%;
@@ -16,4 +16,7 @@
 }
 #footer a:hover{
     text-decoration: underline;
+}
+#footerRule{
+    margin-top: 50px;
 }
