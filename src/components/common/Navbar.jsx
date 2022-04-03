@@ -45,8 +45,8 @@ export const Navbar = () => {
           <div>Sell</div>
           <div>WatchList ▼</div>
           <div>My eBay ▼</div>
-          <div><span className="material-icons-outlined">notifications</span></div>
-          <div><span className="material-icons-outlined">shopping_cart</span></div>
+          <div> <span className="material-icons-outlined">notifications</span></div>
+          <div><Link to="/cart"><span className="material-icons-outlined">shopping_cart</span></Link> </div>
           
           
           { a.user ?<button className="logout-btn"
